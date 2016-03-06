@@ -1,0 +1,229 @@
+% Documentclass options:
+%    10pt, 11pt, 12pt  -- set type size
+%    draft             -- single space, mark overfull hboxes on paper
+%    final             -- double space, don't mark overfull hboxes on paper
+%    oneside           -- format for one-sided printing
+%    twoside           -- format for two-sided printing
+% Defaults are 11pt,final,oneside
+%[10pt]{ucscthesisbs}
+
+\documentclass[10pt]{ucscthesisbs}
+\usepackage{graphicx,epsf}% Include figure files
+
+% The following declaration is for citations and bibliographies consistent with
+% Astrophysical Journal specifications.  It may be left out or replaced with
+% another bibliography/citation style.  See also the "\bibliographystyle"
+% command later in this file.
+%\usepackage{apj}
+
+\begin{document}
+
+% Declarations for Front Matter
+
+\title{Habitable Zones: The Precarious State of an Overrated Concept }
+\author{Steamer E.T. Iodledum}
+\degreeyear{2012}
+\degreemonth{10 June}
+\degree{BACHELOR OF SCIENCE}
+\field{PHYSICS}%
+% Declare up to five committee members.  The text will be reproduced directly
+% on the signature page.  Though the chair is a committee member, leave
+% him/her out of the \committeemember declarations.  Make sure \numberofmembers
+% agrees with the number of committee members declared INCLUDING the chair.
+% If it is wrong, you will get extra or missing lines on the signature page.
+%
+\chair{Professor Michael Dine}
+\technicaladvisor{Professor Habakuk Tibatong}
+\thesisadvisor{Adriane Steinacker}
+
+
+\campus{Santa Cruz}
+
+\maketitle
+\copyrightpage
+
+\begin{frontmatter}
+
+\begin{abstract}
+Here we want to present a good soup boiled down to its very essence. The abstract can be thought of as a miniature version of your thesis. It has to be brief, to the point, a piece that can stand on its own. What did you do? What methods did you use? What are your main results? You may include some data, but don't pack in too much. Stick to a few numbers that are most relevant, or supporting your conclusions. Try to avoid using too many abbreviations. This is the format most suitable for original research. It can, however, also be followed in the case of a literature research thesis. References don't belong in the abstract.
+\end{abstract}
+
+\tableofcontents
+%
+% The most recent (10/95) guidelines make absolutely no mention of the list
+% of figures and list of tables.  Are they necessary?  If not, comment the
+% next two lines out.
+%
+\listoffigures
+\listoftables
+
+\begin{dedication}
+\null\vfil
+{\large
+\begin{center}
+To \\\vspace{12pt}
+my chicken pet,\\\vspace{12pt}
+Chanel 5.
+\end{center}}
+\vfil\null
+\end{dedication}
+
+\begin{acknowledgements}
+I want to ``thank'' my committee, without whose ridiculous demands, I
+would have graduated so very much faster.
+\end{acknowledgements}
+
+
+\end{frontmatter}
+
+%\part{First Part}
+
+\chapter{Introduction}
+
+Every thesis should have an introduction.  The introduction should gradually lead the reader
+into your topic. It may thus contains relevant background information for your topic (for example a historical perspective, or a review of the existing knowledge in the field), concepts on which you will build (although sometimes it is better to create a separate chapter for these). The introduction should narrow down to your goals. What is your contribution to the field? Very briefly how did you achieve this? You can also present at the end an outline of your thesis to guide the reader. These last two points should be no more than one paragraph.
+
+The thesis introduction may be written at a science audience level. This is a more comprehensive level than the introduction you will write for a journal article. Ideally, your fellow students in the class should understand it well, and your parents and relatives, putting in some effort, should also enjoy reading it. 
+
+
+\section{The Equations of Ideal Magnetohydrodynamics}
+
+I don't feel like typing them all in right now. I'll just do that later, after I reviewed the
+LaTeX commands for the mathematical symbols and operations involved. I should also not forget to label my equations. I will thus have to review those commands as well. Besides, the equations
+of ideal MHD have only marginally something to do with my proposed topic. They might feature
+in a section of the "Methods" after all. Clearly, I still have some formatting issues here, which I will sort out later.
+
+\begin{figure}[t!]
+ \centerline{
+  \epsfxsize=3.8in
+   \epsfbox{comparezfc_bw.ps}
+ }
+\caption[Transverse Scans at difference Temperatures at $H=11$~T]
+{Representative transverse scans for the different temperatures
+below $T_{\rm c}(H) = 63.7$~K taken with
+$H=11$~T after cooling in $H=0$. Each scan is displaced vertically by 0.1 units
+from the scan below it for clarity.  The solid curves
+are results of least-squares fits to
+a Gaussian line shapes with a half-width-at-half-maximum
+equal to $2.1\times10^{-4}$ r.l.u.
+(This is not my figure, so {\bf I must reference it!})}
+\label{fig:discretescan}
+\end{figure}
+
+In Fig.\ \ref {fig:discretescan} I present something that is completely irrelevant for my thesis. I am not sure why it is here, but I refer to it anyway.
+%Here's some Fig.\ \ref {fig:discretescan} text for the section.
+
+Here's some text $\nu ^{2 \beta}$  for the section.
+
+
+\subsection{Subsection 1}
+
+Here's a citation of one of the references \cite{spa02}. I do not like the numbered system. Please use the Harvard referencing system!
+
+We can do equations like this first famous attempt
+at special relativity $E=ma^2$.  A second attempt
+was $E=mb^2$.  Finally, the correct answer was found
+to be
+\begin{equation}
+E=mc^2
+\end{equation}
+However, a pathetic attempt was made to push
+for
+\begin{equation}
+E=mc_2
+\end{equation}
+but that was quickly rejected with much ridicule.
+We can go on presenting formulas that have nothing to do with the thesis, and soon
+we will have filled up the 26 pages of writing required to fulfill the W-requirement. You see
+how easy it is!
+
+Finally, we also present a useless table, even though it would be better if we could
+present a useful one. Table 1.1 and 1.2 give an overview of the supermodels that we
+investigated with the help of our 3D-MHD code LOSER. We will move these tables later into the "Analysis" section.
+
+
+\begin{table}
+\begin{tabular}{|l|r|}
+  \hline 
+Model number & Name \\
+\hline
+1 & Cindy Crawford \\
+2 & Naomy Campbell \\ \hline
+\end{tabular}
+\caption{A normalsize table.  There has been a complaint that table
+captions are not single-spaced.  This is odd because the code
+indicates that they should be.}
+\end{table}
+
+\begin{table}
+\caption{A small table.}
+\begin{scriptsizetabular}{|l|r|}
+  \hline 
+Model number & Name \\
+\hline
+1 & Cindy Crawford \\
+2 & Naomi Campbell \\ \hline
+\end{scriptsizetabular}
+\end{table}
+
+\chapter{Numerical Procedures}
+
+Developing a general relativistic MHD code is known to be no joke, yet it is worth every drop of sweat, because MHD processes are important in astrophysics, and these equations are so complex that it is usually impossible to obtain solutions other than through numerical techniques.
+
+The numerical procedure follows the method of characteristics constrained transport (MOCCT) as outlined in Hawley \& Stone (1995) and implemented in the ZEUS code. Alfv\'en wave characteristics are used to integrate the induction equation and to evaluate the Lorentz force. Th evolution of the magnetic field is constrained to enforce divergence-free ({\boldmath $\nabla \cdot B=0$}) to machine accuracy. The code solves the fluid equations using the method of finite-differences and operator splitting, which breaks up the PDE's into parts. The time step is limited by the Courant condition. A flow diagram of this time-explicit, operator split procedure is shown in Fig.\ \ref {fig:flow}.
+
+\begin{figure}[t!]
+ \centerline{
+  \epsfxsize=3.8in
+   \epsfbox{comparezfc_bw.ps}
+ }
+\caption[Flow diagram of the 3D-MHD LOSER code]
+{{\bf Flow diagram of the 3D-MHD LOSER code. }This is my figure, so {\bf I must not reference it!}}
+\label{fig:flow}
+\end{figure}
+
+
+\begin{figure}
+\caption{{\bf Centering of the primary hydrodynamical variables.} The density, internal energy density, rotational velocity, and gravitational potential are zone centered. The components of the velocity and magnetic field are face centered (adapted from Stone \& Norman, 1992).}
+\end{figure}
+
+\begin{figure}
+\caption{A third figure.}
+\end{figure}
+
+\chapter{Results}
+
+I wish I would have started my work earlier. In that case, I could now have presented some really nice results. Instead, I can only hope that I will have them by the end of next quarter. This chapter will remain silent until I can fill in the details. I do not, however, need to wait until I have everything together. It might be wise to start writing preliminary results, or at least sketch out the ideas that will go into this part.
+
+\chapter{Discussion}
+
+\chapter{Conclusion}
+Even though we still need to produce some results, here is a preliminary section of conclusions.
+Our work shows unambiguously that the usage of the term "habitable zone" is pretty much nonsense as long as the observations of extrasolar planets do not provide specific information about the atmospheric composition of the planet. In absence of this valuable information, we can only resort to wild speculations, in which case, we might as well publish our work in the Journal for Esoteric and Crystal Science. This latter field of expertise has been growing exponentially over the past decade, thanks to an unusual influx of highly competent human resources. Extrapolating the
+present results into the future, we predict that we will find an alien right around the corner in five years from now.
+
+\appendix
+\chapter{Some Ancillary Stuff}
+
+Ancillary material should be put in appendices.  The guidelines are not
+clear whether bibliography comes before or after the appendices, but they
+\emph{suggest} appendices come first.
+Ancillary material should be put in appendices.  The guidelines are not
+clear whether bibliography comes before or after the appendices, but they
+\emph{suggest} appendices come first.
+Ancillary material should be put in appendices.  The guidelines are not
+clear whether bibliography comes before or after the appendices, but they
+\emph{suggest} appendices come first.
+Ancillary material should be put in appendices.  The guidelines are not
+clear whether bibliography comes before or after the appendices, but they
+\emph{suggest} appendices come first.
+
+\nocite{*}
+
+\begin{thebibliography}{999}
+\bibitem{sh} Hawley, J. F., \& Stone, J. M.1995, Comput. Phys. Commun., {\bf 89}, 127
+\bibitem{sn} Stone, J. M., \& Norman, M. L. 1992, ApJ., {\bf 80}, 753
+
+\end{thebibliography}
+
+\end{document}
